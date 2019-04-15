@@ -36,7 +36,7 @@ def myNetwork():
     h10 = net.addHost('h10', cls=Host, mac='00:00:00:01:50:01', ip='20.0.50.1/8', defaultRoute='via 20.100.0.1')
     r = net.addHost('r', cls=Host, mac='10:10:10:10:10:01', ip='10.100.0.1')
 
-    c0=net.addController('c0',controller=RemoteController,ip='192.168.63.129',port=6633)
+    c0=net.addController('c0',controller=RemoteController,ip='127.0.0.1',port=6633)
 
 
     info( '*** Add links\n')
